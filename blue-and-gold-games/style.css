@@ -499,3 +499,26 @@ h4 {
 .gold-color {
     color: #cc9800;
 }
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    /* assume this is mobile */
+
+    .first-column {
+        display: none;
+        /* visibility: hidden;
+        width: 0%; */
+    }
+
+    .second-column {
+        width: 100%;
+    }
+
+    .blue-score-img {
+        display: none;
+    }
+
+    .gold-score-img {
+        display: none;
+    }
+}

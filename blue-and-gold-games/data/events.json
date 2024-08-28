@@ -1,32 +1,38 @@
 [
     {
         "display-name": "Dodgeball",
-        "time": "3pm-4pm",
+        "time": "pep-rally",
         "location": "Wrestling Room",
         "state": "blue"
     },
     {
         "display-name": "Tug of War",
-        "time": "3pm-4pm",
+        "time": "pep-rally",
         "location": "Chapel Lawn",
         "state": "gold"
     },
     {
         "display-name": "Trivia",
-        "time": "3pm-4pm",
+        "time": "pep-rally",
         "location": "Masland",
         "state": "tie"
     },
     {
         "display-name": "Capture the Flag",
-        "time": "4pm-5pm",
+        "time": "block-1",
         "location": "Football Field",
         "state": "ongoing"
     },
     {
         "display-name": "400m Relay",
-        "time": "5pm-6pm",
+        "time": "block-2",
         "location": "Track",
+        "state": "scheduled"
+    },
+    {
+        "display-name": "Volleyball",
+        "time": "block-3",
+        "location": "Armelino Quad",
         "state": "scheduled"
     }
 ]
