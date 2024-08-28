@@ -355,7 +355,7 @@ h4 {
 /*the score display for the teams*/
 .score {
     font-size: 150px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     /* display: inline-flex; */
     vertical-align: center;
     /* padding-left: 0px; */
@@ -441,6 +441,30 @@ h4 {
 
 .event-state {
     grid-column: 4;
+}
+
+.event-state.result-blue {
+    /* make it a little brighter bc optical illusion */
+    color: #7575ff;
+    font-weight: bold;
+}
+
+.event-state.result-gold {
+    /* make it a little brighter bc optical illusion */
+    color: #cc9800;
+    font-weight: bold;
+}
+
+.event-state.result-tie {
+    color: #a0a0a0;
+}
+
+.event-state.result-ongoing {
+    color: #159e3e;
+}
+
+.event-state.result-scheduled {
+    color: #ff0000;
 }
 
 .event-grid>p {

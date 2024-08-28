@@ -14,11 +14,31 @@ function updateEventList(events) {
         newEventLocation.classList.add("event-location");
         newEventState.classList.add("event-state");
 
-        // set the data
+        // set the text based on the data
         newEventName.innerText = eventObject["display-name"];
         newEventTime.innerText = eventObject["time"];
         newEventLocation.innerText = eventObject["location"];
-        newEventState.innerText = eventObject["state"];
+
+        // set the "result"; needs case by case handling
+        state = eventObject["state"];
+        if (state == "blue") {
+            newEventState.innerText = "Blue";
+            newEventState.classList.add("result-blue");
+        } else if (state == "gold") {
+            newEventState.innerText = "Gold";
+            newEventState.classList.add("result-gold");
+        } else if (state == "tie") {
+            newEventState.innerText = "Tie";
+            newEventState.classList.add("result-tie");
+        } else if (state == "ongoing") {
+            newEventState.innerText = "Ongoing";
+            newEventState.classList.add("result-ongoing");
+        } else if (state == "scheduled") {
+            newEventState.innerText = "Scheduled";
+            newEventState.classList.add("result-scheduled");
+        } else {
+            newEventState.innerText = state;
+        }
 
         // add the elements to event list
         // NOTE: order of the following lines matters
