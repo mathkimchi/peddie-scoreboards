@@ -1,12 +1,11 @@
-Pep Rally
-All
+$BLOCK:Pep Rally
+$GENRE:All
 Portrait;Tent Village;20
 5 Minute Play;Pep Rally - Rehersal @ Annenberg Classrooms;25
 Musical Performance;Pep Rally - Rehersal @ Swig;35
 Lip Sync and Dance Battle;Pep Rally - Rehersal @ Masland Room or Longstreet;35
-BLOCK-SEPERATOR
-Block 1
-Sports
+$BLOCK:Block 1
+$GENRE:Sports
 Basketball 3-point contest (Upperclassmen/Faculty);Outdoor Basketball Court 2;10
 Basketball Knockout (Underclassmen/Faculty);Outdoor Basketball Court 1;10
 Dodgeball;Indoor Track;8
@@ -17,27 +16,23 @@ Archery Challenge;Field Behind Caspersen History House;5
 Gaga;Center Campus in front of Chapel;5
 Soccer Skills Challenge;Outdoor Turf;5
 Street Hockey;Annenberg Parking Lot;10
-GENRE-SEPERATOR
-Games
+$GENRE:Games
 Family Feud;Science Center Patio Tent;8
 Chess;Dining Hall;6
 Gaint Checkers;Science Center Patio Tent;6
 Slime or Water Roulette;Science Center Patio Tent;12
 Trivia;Dining Hall;10
-GENRE-SEPERATOR
-Culinary
+$GENRE:Culinary
 Best Breakfast;Science Center Patio Kitchen;10
 Cookie Making;Science Center Patio Kitchen;6
 Biscuit Making;Science Center Patio Kitchen;4
-GENRE-SEPERATOR
-Creative
+$GENRE:Creative
 Mini Self Portrait;Science Center Patio Tent;8
 Origami;Science Center Patio Tent;6
 Poetry Slam;Science Center Patio Tent;8
 Chalk Art;Science Center Patio Tent;10
-BLOCK-SEPERATOR
-Block 2
-Sports
+$BLOCK:Block 2
+$GENRE:Sports
 Basketball 3-point contest (Underclassmen/Faculty);Outdoor Basketball Court 2;10
 Basketball Knockout (Upperclassmen/Faculty);Outdoor Basketball Court 1;10
 Bocce Ball;Science Center Patio Tent;5
@@ -49,27 +44,23 @@ Home Run Derby;Varsity Baseball Field;12
 Track Meet;Track;10
 Football Skills Challenge;Football Field;6
 Soccer PK Challenge;Outdoor Turf;6
-GENRE-SEPERATOR
-Games
+$GENRE:Games
 Horseshoes;Science Center Patio Tent;5
 Water War;Science Center Patio Tent;12
 Whisper Challenge;Dining Hall;10
 Famous Face Off;Dining Hall;10
 Connect 4;Science Center Patio Tent;6
-GENRE-SEPERATOR
-Culinary
+$GENRE:Culinary
 Burrito Challenge;Science Center Patio Kitchen;6
 Guacamole making;Science Center Patio Kitchen;6
 Grilled Cheese Competition;Science Center Patio Kitchen;6
-GENRE-SEPERATOR
-Creative
+$GENRE:Creative
 Photo Competition;Science Center Patio Tent;8
 Scratch Art;Science Center Patio Tent;10
 Lake Charcoal Sketch;Science Center Patio Tent;8
 Paper Airplane Design and Launch;Science Center Patio Tent;8
-BLOCK-SEPERATOR
-Block 3
-Sports
+$BLOCK:Block 3
+$GENRE:Sports
 Slow Pitch Softball;Varsity Softball Field;15
 Volleyball;Center Campus Volleyball Net;15
 Capture the flag;Center Campus;10
@@ -80,19 +71,16 @@ Old School Fishing;Gazebo;10
 Pickleball;Tennis Courts;15
 Sychonized Swimming;Pool;18
 WaterPolo;Pool;15
-GENRE-SEPERATOR
-Games
+$GENRE:Games
 Puzzle Competition;Dining Hall;12
 Texas Holdem;Dining Hall;10
 You Laugh, You Lose;Grille;12
 Battle Pictionary;Dining Hall;12
-GENRE-SEPERATOR
-Culinary
+$GENRE:Culinary
 3 Course Meal;Science Center Patio Kitchen;12
 Cake Decorating;Science Center Patio Kitchen;8
 Pizza Making;Science Center Patio Kitchen;6
-GENRE-SEPERATOR
-Creative
+$GENRE:Creative
 Acapella Performance;Pep Rally - Rehersal @ Annenberg Classrooms;20
 Popsicle House Construction;Science Center Patio;15
 Elementary School Music Performance;Pep Rally - Rehersal @ Private Dining Room or Senior Lounge;20

@@ -1,93 +1,106 @@
-function updateEventList(events) {
-    for (let i = 0; i < events.length; i++) {
-        // "event" is a keyword or st in js
-        eventObject = events[i];
+const blocksInOrder = ["Pep Rally", "Block 1", "Block 2", "Block 3"];
 
-        // prepare elements
-        const newEventName = document.createElement("p2");
-        const newEventTime = document.createElement("p2");
-        const newEventLocation = document.createElement("p2");
-        const newEventState = document.createElement("p2");
+function activeBlockIndex() {
+    // TODO
+    // 0 means currently pep rally
+    // 3 means currently block 3
+    return 0;
+}
 
-        newEventName.classList.add("event-name");
-        newEventTime.classList.add("event-time");
-        newEventLocation.classList.add("event-location");
-        newEventState.classList.add("event-state");
+function addEventToList(eventName, eventLocation, eventWorth, eventBlock, eventGenre) {
+    const eventBlockIndex = blocksInOrder.indexOf(eventBlock);
 
-        // set the text based on the data
-        newEventName.innerText = eventObject["display-name"];
-        newEventTime.innerText = eventObject["time"];
-        newEventLocation.innerText = eventObject["location"];
+    console.debug("Adding event with", eventName, eventLocation, eventWorth, eventBlock, eventGenre, eventBlockIndex);
 
-        // set the "result"; needs case by case handling
-        state = eventObject["state"];
-        if (state == "blue") {
-            newEventState.innerText = "Blue";
-            newEventState.classList.add("result-blue");
-        } else if (state == "gold") {
-            newEventState.innerText = "Gold";
-            newEventState.classList.add("result-gold");
-        } else if (state == "tie") {
-            newEventState.innerText = "Tie";
-            newEventState.classList.add("result-tie");
-        } else if (state == "ongoing") {
-            newEventState.innerText = "Ongoing";
-            newEventState.classList.add("result-ongoing");
-        } else if (state == "scheduled") {
-            newEventState.innerText = "Scheduled";
-            newEventState.classList.add("result-scheduled");
+    var eventList;
+    if (eventBlockIndex < activeBlockIndex()) {
+        // this event is over; don't display
+        return;
+    } else if (eventBlockIndex == activeBlockIndex()) {
+        // current event
+        eventList = document.getElementById("current-event-list");
+    } else {
+        // scheduled event
+        eventList = document.getElementById("scheduled-event-list");
+    }
+
+    // prepare elements
+    const newEventName = document.createElement("p2");
+    const newEventLocation = document.createElement("p2");
+
+    newEventName.classList.add("event-name");
+    newEventLocation.classList.add("event-location");
+
+    // set the text based on the data
+    newEventName.innerText = eventName;
+    newEventLocation.innerText = eventLocation;
+
+    // add the elements to event list
+    // NOTE: order of the following lines matters
+    eventList.appendChild(newEventName);
+    eventList.appendChild(newEventLocation);
+}
+
+function updateEventList(eventsDataString) {
+    var block = "Unset Block";
+    var genre = "Unset Genre";
+
+    for (line of eventsDataString.split("\n")) {
+        console.debug("Line:", line);
+        if (line == "") {
+            // should not happen but whatever, ignore
+            continue;
+        } else if (line.startsWith("$")) {
+            // attribute line: `$ATTRNAME:Attribute Value`
+            const attributeName = line.split(":")[0].slice(1);
+            const attributeValue = line.split(":")[1];
+
+            if (attributeName == "BLOCK") {
+                block = attributeValue;
+            } else if (attributeName == "GENRE") {
+                genre = attributeValue;
+            }
         } else {
-            newEventState.innerText = state;
-        }
+            // data line: `Event Name;Event Location;Points Worth`
+            const dataValues = line.split(";");
+            console.debug("Data values:", dataValues);
+            const eventName = dataValues[0];
+            const eventLocation = dataValues[1];
+            const eventWorth = dataValues[2];
 
-        // add the elements to event list
-        // NOTE: order of the following lines matters
-        document.getElementById("event-list").appendChild(newEventName);
-        document.getElementById("event-list").appendChild(newEventLocation);
-        document.getElementById("event-list").appendChild(newEventTime);
-        document.getElementById("event-list").appendChild(newEventState);
+            addEventToList(eventName, eventLocation, eventWorth, block, genre);
+        }
     }
 }
 
-function updateOverallScores(events) {
-    var blueScore = 0;
-    var goldScore = 0;
-
-    // count points
-    for (let i = 0; i < events.length; i++) {
-        // "event" is a keyword in js or st
-        eventObject = events[i];
-
-        // possible states are:
-        // `blue` or `gold` - game ended, the name of the winning team
-        // `tie` - game ended in a tie 
-        // `ongoing` - currently happening 
-        // `scheduled` - hasn't started yet 
-        if (eventObject["state"] == "blue") {
-            blueScore += 1;
-        } else if (eventObject["state"] == "gold") {
-            goldScore += 1;
-        }
-    }
+function updateTotalScores(totalScores) {
+    var blueScore = totalScores["blue-total-score"];
+    var goldScore = totalScores["gold-total-score"];
 
     document.getElementById("blue-score").innerText = blueScore;
     document.getElementById("gold-score").innerText = goldScore;
 }
 
 function update() {
-    fetch("../blue-and-gold-games/data/events.json").then(response => {
+    document.getElementById("current-block").innerText = blocksInOrder[activeBlockIndex()];
+
+    fetch("../blue-and-gold-games/data/events.data").then(response => {
         if (!response.ok) {
             throw new Error("Bad Response")
         }
         return response.text()
-    }).then(eventsString => {
-        console.log(eventsString);
+    }).then(updateEventList)
+        .catch(error => {
+            console.error(error);
+            // document.getElementById("portfolio-code3").innerText = "Unable to fetch portfolio, try again later"
+        });
 
-        events = JSON.parse(eventsString);
-
-        updateEventList(events);
-        updateOverallScores(events);
-    })
+    fetch("../blue-and-gold-games/data/totalScores.json").then(response => {
+        if (!response.ok) {
+            throw new Error("Bad Response")
+        }
+        return response.text()
+    }).then(JSON.parse).then(updateTotalScores)
         .catch(error => {
             console.error(error);
             // document.getElementById("portfolio-code3").innerText = "Unable to fetch portfolio, try again later"

@@ -429,7 +429,7 @@ h4 {
     /* background-color: #ffffff; */
     border: 1px solid #ffffff;
 
-    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: auto auto auto auto; */
 }
 
 .event-name {
@@ -440,13 +440,13 @@ h4 {
     grid-column: 2;
 }
 
-.event-time {
+/* .event-time {
     grid-column: 3;
 }
 
 .event-state {
     grid-column: 4;
-}
+} */
 
 .event-state.result-blue {
     /* make it a little brighter bc optical illusion */
