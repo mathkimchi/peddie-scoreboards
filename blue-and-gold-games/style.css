@@ -352,6 +352,11 @@ h4 {
     margin-top: 100px;
 }
 
+#qr-label {
+    color: var(--neutral-color);
+    font-size: 10px;
+}
+
 /*the score display for the teams*/
 .score {
     font-size: 150px;
