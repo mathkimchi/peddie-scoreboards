@@ -1,0 +1,32 @@
+[
+    {
+        "display-name": "Dodgeball",
+        "time": "3pm-4pm",
+        "location": "Wrestling Room",
+        "state": "blue"
+    },
+    {
+        "display-name": "Tug of War",
+        "time": "3pm-4pm",
+        "location": "Outside of Chapel",
+        "state": "gold"
+    },
+    {
+        "display-name": "Trivia",
+        "time": "3pm-4pm",
+        "location": "Masland",
+        "state": "tie"
+    },
+    {
+        "display-name": "Capture the Flag",
+        "time": "4pm-5pm",
+        "location": "Football Field",
+        "state": "ongoing"
+    },
+    {
+        "display-name": "400m Relay",
+        "time": "5pm-6pm",
+        "location": "Track",
+        "state": "scheduled"
+    }
+]

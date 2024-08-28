@@ -1,0 +1,1 @@
+Based off the [blair day scoreboard](https://github.com/PeddieCompSciClub/Blair-Day/tree/main).

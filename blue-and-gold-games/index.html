@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blue and Gold Games</title>
+    <link rel="icon" href="../res/peddie-icon.png">
+    <meta name="description" content="Blue and Gold Games">
+
+    <!-- refresh every 30 seconds -->
+    <meta http-equiv="refresh" content="30">
+
+    <!--Meta to prevent Caching:-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <!-- CSS stuff -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <!-- <link href="schedule.html" rel="import" /> -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="../scripts/update-time.js" defer></script>
+    <script src="../scripts/graduation-counter.js" defer></script>
+    <script src="../scripts/update-scores.js" defer></script>
+</head>
+
+<body onload="startTime()">
+
+    <div class="first-column">
+        <img src="../res/peddielogo.png" class="logo" alt="peddie logo">
+        <div id='clock' class='currentblock'></div>
+        <div class="weather-grid-container">
+            <!-- TODO: all this is just placeholder lmao -->
+            <div class="weather-grid-item1">
+                <img src="../res/weather.png" class="weather_img">
+            </div>
+            <div class="weather-grid-item2">
+                <code class="language-python match-braces temp" id="portfolio-code5temp">64℉</code>
+            </div>
+            <div class="weather-grid-item3">
+                <code class="language-python match-braces weather" id="portfolio-code5"></code>
+            </div>
+        </div>
+        <h3>
+            Menu
+
+        </h3>
+        <div><code class="language-python match-braces menu" id="portfolio-code2"> </code></div>
+        <h4>
+            Days Until Graduation
+        </h4>
+        <!-- <div> <code class="language-python match-braces counter" id="portfolio-code6"> </code></div> -->
+        <div id='counterdays' class='counter'></div>
+
+        <img src="../res/blue-and-gold-games-qr-link.png" alt="qr link" id="qr-link">
+    </div>
+    <div class="second-column">
+        <div class='magic-mirror'>
+            <h2>
+                <span class="blue-color">Blue</span> and <span class="gold-color">Gold</span> Games 2024
+            </h2>
+        </div>
+        <div class="grid-container">
+            <!-- overall scores -->
+            <div class="blue-score-img">
+                <h1><span class="blue-color">Blue</span></h1>
+            </div>
+            <div class="blue-score-val">
+                <h1 class="score blue-color" id="blue-score"></h1>
+            </div>
+            <div class="score-seperator">
+                <h1>:</h1>
+            </div>
+            <div class="gold-score-val">
+                <h1 class="score gold-color" id="gold-score"></h1>
+            </div>
+            <div class="gold-score-img">
+                <h1><span class="gold-color">Gold</span></h1>
+            </div>
+        </div>
+        <div class="main-grid-container">
+            <div class="grid-item1 event-grid" id="event-list">
+                <p class="event-name">Game</p>
+                <p class="event-location">Location</p>
+                <p class="event-time">Time</p>
+                <p class="event-state">Result</p>
+            </div>
+            <div> <code class="language-python match-braces counter" id="portfolio-code3"> </code></div>
+            <!-- <div class="grid-item2">
+                <p class='student_section'>Student Photography</p>
+                <div class='student_section2'>
+                    <div class="embed-responsive">
+                        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;"
+                            src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72177720302691153&sort=2&by=album&theme=slider&scale=fit&speed=30000&limit=400&skin=default-light&autoplay=true"
+                            scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true"
+                            mozallowfullscreen="true">
+                            <p><a href="https://www.compareboilercover.co.uk">Compare Boiler Cover UK</a></p>
+                            <small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small>
+                        </iframe>
+                        <script
+                            type="text/javascript">function showpics() { var a = $("#box").val(); $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=" + a + "&tagmode=any&format=json&jsoncallback=?", function (a) { $("#images").hide().html(a).fadeIn("fast"), $.each(a.items, function (a, e) { $("<img/>").attr("src", e.media.m).appendTo("#images") }) }) }</script>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item3">
+                <p> Upcoming Events</p>
+                <div><code class="language-python match-braces calendar" id="portfolio-code4"> </code></div>
+            </div> -->
+        </div>
+    </div>
+
+</body>
