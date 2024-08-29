@@ -17,25 +17,25 @@ Gaga;Center Campus in front of Chapel;5
 Soccer Skills Challenge;Outdoor Turf;5
 Street Hockey;Annenberg Parking Lot;10
 $GENRE:Games
-Family Feud;Science Center Patio Tent;8
+Family Feud;Science Patio Tent;8
 Chess;Dining Hall;6
-Gaint Checkers;Science Center Patio Tent;6
-Slime or Water Roulette;Science Center Patio Tent;12
+Gaint Checkers;Science Patio Tent;6
+Slime or Water Roulette;Science Patio Tent;12
 Trivia;Dining Hall;10
 $GENRE:Culinary
 Best Breakfast;Science Center Patio Kitchen;10
 Cookie Making;Science Center Patio Kitchen;6
 Biscuit Making;Science Center Patio Kitchen;4
 $GENRE:Creative
-Mini Self Portrait;Science Center Patio Tent;8
-Origami;Science Center Patio Tent;6
-Poetry Slam;Science Center Patio Tent;8
-Chalk Art;Science Center Patio Tent;10
+Mini Self Portrait;Science Patio Tent;8
+Origami;Science Patio Tent;6
+Poetry Slam;Science Patio Tent;8
+Chalk Art;Science Patio Tent;10
 $BLOCK:Block 2
 $GENRE:Sports
 Basketball 3-point contest (Underclassmen/Faculty);Outdoor Basketball Court 2;10
 Basketball Knockout (Upperclassmen/Faculty);Outdoor Basketball Court 1;10
-Bocce Ball;Science Center Patio Tent;5
+Bocce Ball;Science Patio Tent;5
 Tri-Cycle Race (UnderClassmen/Faculty);Campus;5
 Archery Tag;Center Campus;6
 Ping Pong;Kaye North;4
@@ -45,20 +45,20 @@ Track Meet;Track;10
 Football Skills Challenge;Football Field;6
 Soccer PK Challenge;Outdoor Turf;6
 $GENRE:Games
-Horseshoes;Science Center Patio Tent;5
-Water War;Science Center Patio Tent;12
+Horseshoes;Science Patio Tent;5
+Water War;Science Patio Tent;12
 Whisper Challenge;Dining Hall;10
 Famous Face Off;Dining Hall;10
-Connect 4;Science Center Patio Tent;6
+Connect 4;Science Patio Tent;6
 $GENRE:Culinary
 Burrito Challenge;Science Center Patio Kitchen;6
 Guacamole making;Science Center Patio Kitchen;6
 Grilled Cheese Competition;Science Center Patio Kitchen;6
 $GENRE:Creative
-Photo Competition;Science Center Patio Tent;8
-Scratch Art;Science Center Patio Tent;10
-Lake Charcoal Sketch;Science Center Patio Tent;8
-Paper Airplane Design and Launch;Science Center Patio Tent;8
+Photo Competition;Science Patio Tent;8
+Scratch Art;Science Patio Tent;10
+Lake Charcoal Sketch;Science Patio Tent;8
+Paper Airplane Design and Launch;Science Patio Tent;8
 $BLOCK:Block 3
 $GENRE:Sports
 Slow Pitch Softball;Varsity Softball Field;15
