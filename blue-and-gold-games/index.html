@@ -7,7 +7,7 @@
     <meta name="description" content="Blue and Gold Games">
 
     <!-- refresh every 120 seconds -->
-    <meta http-equiv="refresh" content="120">
+    <!-- <meta http-equiv="refresh" content="120"> -->
 
     <!--Meta to prevent Caching:-->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -132,5 +132,19 @@
             </div> -->
         </div>
     </div>
+
+	<script>
+		function scheduleReload(time) {
+			setTimeout(() => {
+				if (window.navigator.onLine)
+					location.reload();
+				else
+					scheduleReload(60);
+			}, time * 1000);
+		}
+		scheduleReload(60);
+
+		document.getElementById("portfolio-code5temp").innerText = `${Math.random() <= 0.05 ? Math.round(Math.random() * (120 - 30) + 3) : Math.round(Math.random() * (91 - 70) + 70)}F`;
+	</script>
 
 </body>
