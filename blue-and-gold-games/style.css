@@ -493,9 +493,8 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #282928;
 
-    color: #ffffff;
+    /* color: #ffffff; */
     font-family: 'Brandon Grotesque';
     text-align: center;
     font-size: 12px;
@@ -504,9 +503,22 @@ h4 {
 .blue-color {
     color: #0000a2;
 }
+.blue-winner-color {
+	background-color: #0000a2;
+	color: #ffffff;
+}
 
 .gold-color {
-    color: #cc9800;
+	color: #cc9800;
+}
+.gold-winner-color {
+    background-color: #cc9800;
+	color: #000000;
+}
+
+.no-color {
+	color: #ffffff;
+    background-color: #282928;
 }
 
 /* Use a media query to add a breakpoint at 1200px: */

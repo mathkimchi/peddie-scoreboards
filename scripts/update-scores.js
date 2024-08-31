@@ -7,10 +7,10 @@ function activeBlockIndex() {
     return 0;
 }
 
-function addEventToList(eventName, eventLocation, eventWorth, eventBlock, eventGenre) {
+function addEventToList(eventName, eventLocation, eventWorth, eventBlock, eventGenre, eventWinner) {
     const eventBlockIndex = blocksInOrder.indexOf(eventBlock);
 
-    console.debug("Adding event with", eventName, eventLocation, eventWorth, eventBlock, eventGenre, eventBlockIndex);
+    console.debug("Adding event with", eventName, eventLocation, eventWorth, eventBlock, eventGenre, eventBlockIndex, eventWinner);
 
     var eventList;
     if (eventBlockIndex < activeBlockIndex()) {
@@ -30,6 +30,19 @@ function addEventToList(eventName, eventLocation, eventWorth, eventBlock, eventG
 
     newEventName.classList.add("event-name");
     newEventLocation.classList.add("event-location");
+
+	if (eventWinner=="B") {
+		newEventName.classList.add("blue-winner-color");
+		newEventLocation.classList.add("blue-winner-color");
+	}
+	if (eventWinner=="G") {
+		newEventName.classList.add("gold-winner-color");
+		newEventLocation.classList.add("gold-winner-color");
+	}
+	if (eventWinner=="N") {
+		newEventName.classList.add("no-color");
+		newEventLocation.classList.add("no-color");
+	}
 
     // set the text based on the data
     newEventName.innerText = eventName;
@@ -67,8 +80,9 @@ function updateEventList(eventsDataString) {
             const eventName = dataValues[0];
             const eventLocation = dataValues[1];
             const eventWorth = dataValues[2];
+			const eventWinner = dataValues[3];
 
-            addEventToList(eventName, eventLocation, eventWorth, block, genre);
+            addEventToList(eventName, eventLocation, eventWorth, block, genre, eventWinner);
         }
     }
 }

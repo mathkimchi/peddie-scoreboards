@@ -1,86 +1,86 @@
 $BLOCK:Pep Rally
 $GENRE:All
-Portrait;Tent Village;20
-5 Minute Play;Pep Rally - Rehersal @ Annenberg Classrooms;25
-Musical Performance;Pep Rally - Rehersal @ Swig;35
-Lip Sync and Dance Battle;Pep Rally - Rehersal @ Masland Room or Longstreet;35
+Portrait;Tent Village;20;G
+5 Minute Play;Pep Rally - Rehersal @ Annenberg Classrooms;25;B
+Musical Performance;Pep Rally - Rehersal @ Swig;35;N
+Lip Sync and Dance Battle;Pep Rally - Rehersal @ Masland Room or Longstreet;35;N
 $BLOCK:Block 1
 $GENRE:Sports
-Basketball 3-point contest (Upperclassmen/Faculty);Outdoor Basketball Court 2;10
-Basketball Knockout (Underclassmen/Faculty);Outdoor Basketball Court 1;10
-Dodgeball;Indoor Track;8
-Doubles tennis;Tennis Courts;10
-Kickball;Varsity Softball Field;5
-Tri-Cycle Race (UpperClassmen/Faculty);Campus;8
-Archery Challenge;Field Behind Caspersen History House;5
-Gaga;Center Campus in front of Chapel;5
-Soccer Skills Challenge;Outdoor Turf;5
-Street Hockey;Annenberg Parking Lot;10
+Basketball 3-point contest (Upperclassmen/Faculty);Outdoor Basketball Court 2;10;N
+Basketball Knockout (Underclassmen/Faculty);Outdoor Basketball Court 1;10;N
+Dodgeball;Indoor Track;8;N
+Doubles tennis;Tennis Courts;10;N
+Kickball;Varsity Softball Field;5;N
+Tri-Cycle Race (UpperClassmen/Faculty);Campus;8;N
+Archery Challenge;Field Behind Caspersen History House;5;N
+Gaga;Center Campus in front of Chapel;5;N
+Soccer Skills Challenge;Outdoor Turf;5;N
+Street Hockey;Annenberg Parking Lot;10;N
 $GENRE:Games
-Family Feud;Science Patio Tent;8
-Chess;Dining Hall;6
-Gaint Checkers;Science Patio Tent;6
-Slime or Water Roulette;Science Patio Tent;12
-Trivia;Dining Hall;10
+Family Feud;Science Patio Tent;8;N
+Chess;Dining Hall;6;N
+Gaint Checkers;Science Patio Tent;6;N
+Slime or Water Roulette;Science Patio Tent;12;N
+Trivia;Dining Hall;10;N
 $GENRE:Culinary
-Best Breakfast;Science Center Patio Kitchen;10
-Cookie Making;Science Center Patio Kitchen;6
-Biscuit Making;Science Center Patio Kitchen;4
+Best Breakfast;Science Center Patio Kitchen;10;N
+Cookie Making;Science Center Patio Kitchen;6;N
+Biscuit Making;Science Center Patio Kitchen;4;N
 $GENRE:Creative
-Mini Self Portrait;Science Patio Tent;8
-Origami;Science Patio Tent;6
-Poetry Slam;Science Patio Tent;8
-Chalk Art;Science Patio Tent;10
+Mini Self Portrait;Science Patio Tent;8;N
+Origami;Science Patio Tent;6;N
+Poetry Slam;Science Patio Tent;8;N
+Chalk Art;Science Patio Tent;10;N
 $BLOCK:Block 2
 $GENRE:Sports
-Basketball 3-point contest (Underclassmen/Faculty);Outdoor Basketball Court 2;10
-Basketball Knockout (Upperclassmen/Faculty);Outdoor Basketball Court 1;10
-Bocce Ball;Science Patio Tent;5
-Tri-Cycle Race (UnderClassmen/Faculty);Campus;5
-Archery Tag;Center Campus;6
-Ping Pong;Kaye North;4
-Whiffleball;Varsity Softball Field;4
-Home Run Derby;Varsity Baseball Field;12
-Track Meet;Track;10
-Football Skills Challenge;Football Field;6
-Soccer PK Challenge;Outdoor Turf;6
+Basketball 3-point contest (Underclassmen/Faculty);Outdoor Basketball Court 2;10;N
+Basketball Knockout (Upperclassmen/Faculty);Outdoor Basketball Court 1;10;N
+Bocce Ball;Science Patio Tent;5;N
+Tri-Cycle Race (UnderClassmen/Faculty);Campus;5;N
+Archery Tag;Center Campus;6;N
+Ping Pong;Kaye North;4;N
+Whiffleball;Varsity Softball Field;4;N
+Home Run Derby;Varsity Baseball Field;12;N
+Track Meet;Track;10;N
+Football Skills Challenge;Football Field;6;N
+Soccer PK Challenge;Outdoor Turf;6;N
 $GENRE:Games
-Horseshoes;Science Patio Tent;5
-Water War;Science Patio Tent;12
-Whisper Challenge;Dining Hall;10
-Famous Face Off;Dining Hall;10
-Connect 4;Science Patio Tent;6
+Horseshoes;Science Patio Tent;5;N
+Water War;Science Patio Tent;12;N
+Whisper Challenge;Dining Hall;10;N
+Famous Face Off;Dining Hall;10;N
+Connect 4;Science Patio Tent;6;N
 $GENRE:Culinary
-Burrito Challenge;Science Center Patio Kitchen;6
-Guacamole making;Science Center Patio Kitchen;6
-Grilled Cheese Competition;Science Center Patio Kitchen;6
+Burrito Challenge;Science Center Patio Kitchen;6;N
+Guacamole making;Science Center Patio Kitchen;6;N
+Grilled Cheese Competition;Science Center Patio Kitchen;6;N
 $GENRE:Creative
-Photo Competition;Science Patio Tent;8
-Scratch Art;Science Patio Tent;10
-Lake Charcoal Sketch;Science Patio Tent;8
-Paper Airplane Design and Launch;Science Patio Tent;8
+Photo Competition;Science Patio Tent;8;N
+Scratch Art;Science Patio Tent;10;N
+Lake Charcoal Sketch;Science Patio Tent;8;N
+Paper Airplane Design and Launch;Science Patio Tent;8;N
 $BLOCK:Block 3
 $GENRE:Sports
-Slow Pitch Softball;Varsity Softball Field;15
-Volleyball;Center Campus Volleyball Net;15
-Capture the flag;Center Campus;10
-Flag Football;Varsity Football Field;12
-Frisbee Golf;Armellino Quad;15
-Ultimate Frisbee;JV Soccer Fields;10
-Old School Fishing;Gazebo;10
-Pickleball;Tennis Courts;15
-Sychonized Swimming;Pool;18
-WaterPolo;Pool;15
+Slow Pitch Softball;Varsity Softball Field;15;N
+Volleyball;Center Campus Volleyball Net;15;N
+Capture the flag;Center Campus;10;N
+Flag Football;Varsity Football Field;12;N
+Frisbee Golf;Armellino Quad;15;N
+Ultimate Frisbee;JV Soccer Fields;10;N
+Old School Fishing;Gazebo;10;N
+Pickleball;Tennis Courts;15;N
+Sychonized Swimming;Pool;18;N
+WaterPolo;Pool;15;N
 $GENRE:Games
-Puzzle Competition;Dining Hall;12
-Texas Holdem;Dining Hall;10
-You Laugh, You Lose;Grille;12
-Battle Pictionary;Dining Hall;12
+Puzzle Competition;Dining Hall;12;N
+Texas Holdem;Dining Hall;10;N
+You Laugh, You Lose;Grille;12;N
+Battle Pictionary;Dining Hall;12;N
 $GENRE:Culinary
-3 Course Meal;Science Center Patio Kitchen;12
-Cake Decorating;Science Center Patio Kitchen;8
-Pizza Making;Science Center Patio Kitchen;6
+3 Course Meal;Science Center Patio Kitchen;12;N
+Cake Decorating;Science Center Patio Kitchen;8;N
+Pizza Making;Science Center Patio Kitchen;6;N
 $GENRE:Creative
-Acapella Performance;Pep Rally - Rehersal @ Annenberg Classrooms;20
-Popsicle House Construction;Science Center Patio;15
-Elementary School Music Performance;Pep Rally - Rehersal @ Private Dining Room or Senior Lounge;20
+Acapella Performance;Pep Rally - Rehersal @ Annenberg Classrooms;20;N
+Popsicle House Construction;Science Center Patio;15;N
+Elementary School Music Performance;Pep Rally - Rehersal @ Private Dining Room or Senior Lounge;20;N
