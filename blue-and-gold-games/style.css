@@ -9,6 +9,7 @@
 body {
     margin: 0px;
     background-color: black;
+	overflow: hidden;
 }
 
 /* Standard body text style */
