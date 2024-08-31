@@ -118,7 +118,7 @@ h4 {
 /* Grid container used for the main body */
 .main-grid-container {
     display: grid;
-    padding-top: 45px;
+	margin-top: -50px;
     padding-left: 80px;
 }
 
